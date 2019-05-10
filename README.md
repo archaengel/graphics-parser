@@ -50,7 +50,7 @@ Input:
 F0A040004000417F417FC04000400090400047684F5057384000804001C05F204000400001400140400040007E405B2C4000804000
 ```
 
-![blue sqaure](img/blue-square.png | width=100)
+![blue sqaure](img/blue-square.png =100x100)
 
 Output:
 
