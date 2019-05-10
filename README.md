@@ -50,7 +50,7 @@ Input:
 F0A040004000417F417FC04000400090400047684F5057384000804001C05F204000400001400140400040007E405B2C4000804000
 ```
 
-![blue sqaure](img/blue-square.png){:height="250px" width="250px"}
+![blue sqaure](img/blue-square.png)
 
 Output:
 
@@ -60,6 +60,29 @@ CO 0 0 255 255;
 MV (0, 0);
 PEN DOWN;
 MV (4000, 0) (4000, -8000) (-4000, -8000) (-4000, 0) (-500, 0);
+PEN UP;
+```
+
+### Clipping on Canvas Border
+
+```
+F0A0417F41004000417FC067086708804001C067082C3C18782C3C804000
+```
+
+![Two orange lines form a truncated angle as they intersect with the edge of the canvas](img/cliping-lines.png)
+
+Output:
+
+```
+CLR;
+CO 255 128 0 255;
+MV (5000, 5000);
+PEN DOWN;
+MV (8191, 3405);
+PEN UP;
+MV (8191, 1596);
+PEN DOWN;
+MV (5000, 0);
 PEN UP;
 ```
 
