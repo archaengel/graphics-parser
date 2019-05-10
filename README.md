@@ -13,3 +13,11 @@ Integers are encoded like so
 Command | Opcode | Parameters | Output
 --- | --- | --- | --- 
 `CLR` | `F0` | none | `CLR; \n`
+
+This command resets pen position and color.
+
+### Pen Up/Pen Down
+
+Command | Opcode | Parameters | Output
+--- | --- | --- | --- 
+`PEN` | `80` | 0 = pen up, any other integer value = pen down | `PEN UP; \n` or `PEN DOWN; \n`
