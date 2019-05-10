@@ -1,0 +1,31 @@
+{
+  "name": "graphics-parser",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Edward Nuno",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "mocha './test/**/*.test.js' -R dot",
+    "test:watch": "nodemon -w . --exec yarn run test",
+    "lint": "eslint --config node_modules/sanctuary-style/eslint-es6.json --env es6 --env node"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "daggy": "^1.4.0",
+    "jsctags": "^5.2.2",
+    "mocha": "^6.1.2",
+    "nyc": "^13.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "sanctuary-style": "^3.0.0"
+  }
+}
