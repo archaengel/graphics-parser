@@ -10,8 +10,7 @@ Integers are encoded like so
 
 ### Clear
 
-|Command | `CLR`|
------------------
-|Opcode | `F0` |
-|Parameters| (none)|
-|Output | `CLR; \n`|
+Command | `CLR`
+Opcode | `F0` 
+Parameters| (none)
+Output | `CLR; \n`
