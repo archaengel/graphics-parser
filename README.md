@@ -69,7 +69,7 @@ PEN UP;
 F0A0417F41004000417FC067086708804001C067082C3C18782C3C804000
 ```
 
-![Two orange lines form a truncated angle as they intersect with the edge of the canvas](img/cliping-lines.png)
+![two orange lines form a truncated angle as they intersect with the edge of the canvas](img/clipping-lines.png)
 
 Output:
 
