@@ -39,3 +39,27 @@ Command | Opcode | Parameters | Output
 While the encoded commands will give coordinates relative to current pen position, output should display absolute coordinates.
 
 If command takes pen outside of (-8192, -8192) ... (8191, 8191) then pen should move until it reaches the boundary, lift, and then lower once it re-enters the canvas.
+
+## Examples
+
+### Blue Square
+
+Input:
+
+```
+F0A040004000417F417FC04000400090400047684F5057384000804001C05F204000400001400140400040007E405B2C4000804000
+```
+
+![blue sqaure](img/blue-square.png)
+
+Output:
+
+```
+CLR;
+CO 0 0 255 255;
+MV (0, 0);
+PEN DOWN;
+MV (4000, 0) (4000, -8000) (-4000, -8000) (-4000, 0) (-500, 0);
+PEN UP;
+```
+
