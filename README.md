@@ -4,7 +4,7 @@ This is a command-line interface which uses monadic parsing to produce commands 
 
 ## Integers
 
-Valid integers are between [-8192, +8191]. 
+Integers in the opcode string are encoded according to the following scheme. Valid integers are between [-8192, +8191]. 
 
 To encode a raw decimal:
 
