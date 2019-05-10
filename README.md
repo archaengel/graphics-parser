@@ -4,7 +4,29 @@ This is a command-line interface which uses monadic parsing to produce commands 
 
 ## Integers
 
-Integers are encoded like so
+Valid integers are between [-8192, +8191]. 
+
+To encode a raw decimal:
+
+  * Add 8192 to the decimal.
+  * Convert decimal to 16-bit binary. Since valid integers are 14-bit, 2 most significant bits will be cleared.
+```
+00HHHHHH HLLLLLLL
+```
+
+  * Pack bytes such that the most significant bit of each is cleared:
+```
+0HHHHHHH 0LLLLLLL
+```
+  * Finally, convert resulting binary numeral into hexadecimal.
+
+### Sample Values
+
+Unencoded (decimal) | Encoded (hex)
+--- | ---
+`0` | `4000`
+`2048` | `5000`
+`-4096` | `2000`
 
 ## Commands
 
